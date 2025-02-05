@@ -76,22 +76,12 @@ nav a:hover{
 /* Main Content */
 main{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: left;
+    flex-direction: column;
     width:75%;
     background-color: #f0f4f8;
-}
-
-/* Paragraph Styles */
-main p{
-    margin: 2px 2vw;
-    font-size: calc(4px + 1vw);
-    color: #484646;
-}
-
-#profile-image{
-    max-width: 100%;
+    text-align: left;
+    margin: 0 auto;
 }
 
 /* Main Layout */
@@ -102,16 +92,17 @@ main p{
     padding: 2vh 2vw;
 }
 
-/* Profile Text */
+/* Competencies Text */
 #main-text{
-    align-self: center;
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
+    text-align: center;
 }
 
-#main-image{
-    width: 40%;
-    margin: 0 auto;
+#main-text ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
 }
 
 #main-title{
@@ -204,10 +195,6 @@ footer a{
         font-size: calc(1px + 2vw);
     }
 
-    #profile-image{
-        max-width: 100%;
-    }
-
     #main{
         width: 100%;
         display: flex;
@@ -218,7 +205,7 @@ footer a{
     #main-text{
         align-self: center;
         width: 90%;
-        margin: 0 auto;
+        margin: 1vh 1vw;
     }
 
     #main-image{
