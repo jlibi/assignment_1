@@ -21,7 +21,7 @@ header{
     flex-direction: column;
     padding: 1vh 1vw;
     background-color: #484646;
-    color: whitesmoke;
+    color: #cc7d62;
     font-size: calc(1px + .5vw);
 }
 
@@ -61,20 +61,14 @@ nav li{
     border-bottom: 1px solid rgba(166, 210, 178, 0.45);
 }
 
-
 nav a{
     text-decoration: none;
     color: rgba(200, 201, 203, 0.87);
 }
 
-
-/*main {*/
-/*    width: 90%;*/
-/*    max-width: 1200px;*/
-/*    margin: 0 auto;*/
-/*    background-color: lightgray;*/
-/*    padding: 20px;*/
-/*}*/
+nav a:hover{
+    color: rgba(166, 210, 178, 0.45);
+}
 
 main{
     display: flex;
@@ -82,7 +76,6 @@ main{
     width:75%;
     background-color: rgba(240, 244, 248, 0.87);
 }
-
 
 main p{
     margin: 0 1vw;
@@ -120,6 +113,7 @@ main p{
     /*color: #91ceb0;*/
     color: #385044;
 }
+
 /*Two column container ends*/
 
 footer{
@@ -129,23 +123,20 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-#time-date{
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
+    font-size: calc(2px + .8vw);
 }
 
 footer a{
-    color: bisque;
+    color: #9dcbab;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     header{
         align-items: center;
+        text-align: center;
+        font-size: calc(2px + 1vw);
+        color: #cc7d62
+        padding: 1vh 2vw;
     }
 
     #container{
@@ -162,20 +153,33 @@ footer a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: olivedrab;
+        background-color: #35383b;
         list-style: none;
         padding-left: 0;
+        height: auto;
     }
 
     nav li{
-        font-size: calc(2px + 1.5vw);
-        background-color:cadetblue;
+        font-size: calc(2px + 1vw);
+        background-color:#35383b;
+        border-bottom: none;
+        border-right: 1px solid rgba(166, 210, 178, 0.45);
         padding: 1% .5%;
         margin: 1% .5%;
     }
 
+    nav li:last-child{
+        border-right: none;
+    }
+
     nav a{
         text-decoration: none;
+        color: rgba(200, 201, 203, 0.87);
+    }
+
+    nav a:hover{
+        text-decoration: none;
+        color: rgba(166, 210, 178, 0.45);
     }
 
     main{
@@ -187,8 +191,8 @@ footer a{
     }
 
     main p{
-        margin: 2% 2%;
-        font-size: calc(2px + 3vw);
+        margin: 2% 5%;
+        font-size: calc(1px + 2vw);
     }
 
     #profile-image{
@@ -204,16 +208,28 @@ footer a{
 
     #main-text{
         align-self: center;
-        width: 100%;
+        width: 90%;
         margin: 1vh 1vw;
     }
 
     #main-image{
         margin: 1vh auto;
+        max-width: 70%;
     }
 
     #main-title{
         text-align: center;
-        color: maroon;
+        color: #385044;
+        font-size: calc(2px + 3vw);
+    }
+
+    footer p{
+        background-color: #385044;
+        color: #d2d1cf;
+        padding: 1vh 1vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: calc(2px + 1vw);
     }
 }
