@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background-color: beige;
+    font-family: "Raleway", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgba(160, 162, 164, 0.87);
+    font-optical-sizing: auto;
 }
 
 #page-wrapper{
@@ -17,8 +20,9 @@ header{
     display: flex;
     flex-direction: column;
     padding: 1vh 1vw;
-    background-color: grey;
-    color: cornflowerblue;
+    background-color: #484646;
+    color: whitesmoke;
+    font-size: calc(1px + .5vw);
 }
 
 #container{
@@ -26,35 +30,41 @@ header{
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: beige;
+    background-color: rgba(240, 244, 248, 0.87);
 }
 
 nav{
-    width: 30%;
+    width: 25%;
 }
 
 nav ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: chocolate;
+    background-color: #35383b;
     font-size: calc(2px + 2vw);
     text-align: center;
     list-style: none;
     padding-left: 0;
+    height: 100vh;
+    justify-content: flex-start;
+
 }
 
 nav li{
-    font-size: calc(3px + 3vw);
-    width: 90%;
-    background-color:orange;
+    font-size: calc(2px + 1vw);
+    width: 100%;
+
     padding: 2vh 0;
-    margin: 5vh auto;
+    margin: 1vh auto;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(166, 210, 178, 0.45);
 }
 
 
 nav a{
     text-decoration: none;
+    color: rgba(200, 201, 203, 0.87);
 }
 
 
@@ -69,14 +79,15 @@ nav a{
 main{
     display: flex;
     flex-direction: column;
-    width:70%;
-    background-color: lightgray;
+    width:75%;
+    background-color: rgba(240, 244, 248, 0.87);
 }
 
 
 main p{
     margin: 0 1vw;
-    font-size: calc(2px + 2vw);
+    font-size: calc(5px + 1vw);
+    color: #484646;
 }
 
 #profile-image{
@@ -98,20 +109,22 @@ main p{
 
 #main-image{
     width: 40%;
-    margin: 1vh 1vw;
+    /*margin: 1vh 1vw;*/
+    margin: 0 auto;
 }
 
 #main-title{
     margin: 2vw 0;
     text-align: center;
     font-size: calc(2px + 2vw);
-    color: #003e80;
+    /*color: #91ceb0;*/
+    color: #385044;
 }
 /*Two column container ends*/
 
 footer{
-    background-color: steelblue;
-    color: bisque;
+    background-color: #385044;
+    color: #d2d1cf;
     padding: 1vh 1vw;
     display: flex;
     flex-direction: row;
@@ -149,14 +162,14 @@ footer a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: chocolate;
+        background-color: olivedrab;
         list-style: none;
         padding-left: 0;
     }
 
     nav li{
         font-size: calc(2px + 1.5vw);
-        background-color:orange;
+        background-color:cadetblue;
         padding: 1% .5%;
         margin: 1% .5%;
     }
@@ -170,7 +183,7 @@ footer a{
         flex-direction: column;
         width:100%;
         height: 100vh;
-        background-color: burlywood;
+        background-color: gainsboro;
     }
 
     main p{
