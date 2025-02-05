@@ -5,12 +5,12 @@ function getNumbers() {
 }
 
 function updateOutput(result) {
-    let outputElement = document.getElementById(output);
-    outputElement.innerHTML = "Result" + result;
+    let outputElement = document.getElementById("output");
+    outputElement.innerHTML = "Result: " + result;
     if (result < 0) {
         outputElement.style.color = "red";
     } else {
-        outputElement.style.color = "gray";
+        outputElement.style.color = "darkslategray";
     }
 }
 
@@ -53,7 +53,7 @@ function clearFields() {
     document.getElementById("first-number").value = "";
     document.getElementById("second-number").value = "";
     document.getElementById("output").innerHTML = "Result: ";
-    document.getElementById("output").style.color = "black";
+    document.getElementById("output").style.color = "gray";
 }
 
 

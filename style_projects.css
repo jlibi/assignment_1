@@ -74,48 +74,39 @@ nav a:hover{
 }
 
 /* Main Content */
-main{
+main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width:75%;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
     background-color: #f0f4f8;
+    margin: 0 auto;
     padding: 2vh 2vw;
-}
-
-/* Paragraph Styles */
-main p{
-    margin: 2px 2vw;
-    font-size: calc(4px + 1vw);
-    color: #484646;
-}
-
-#profile-image{
-    max-width: 100%;
+    text-align: center;
 }
 
 /* Main Layout */
 #main{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
-    width: 100%;
+    align-items: center;
     padding: 2vh 2vw;
-    width: 100%;
 }
 
-/* Profile Text */
+/* Projects Text */
 #main-text{
-    align-self: center;
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
+    text-align: center;
 }
 
-#main-image{
-    width: 40%;
-    margin: 0 auto;
+#main-text ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
 }
 
 #main-title{
@@ -124,6 +115,72 @@ main p{
     font-size: calc(2px + 2vw);
     color: #385044;
 }
+
+
+/* Calculator Box */
+.calculator {
+    width: 50vw;
+    height: 50vh;
+    background: white;
+    padding: 2vh;
+    border-radius: 1vw;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+    margin: 0 2vw;
+}
+
+/* Input Fields */
+input {
+    width: 40vw;
+    padding: 1vh;
+    font-size: calc(10px + 0.5vw);
+    margin: 1vh 0;
+    border-radius: 0.5vw;
+    border: 1px solid #ccc;
+}
+
+/* Button Container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+button {
+    padding: 1vh 2vw;
+    font-size: calc(10px + 0.5vw);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    background-color: rgba(166, 210, 178, 0.45);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Clear Button Styling */
+.clear-btn {
+    background-color: #cc7d62;
+    margin-top: 2vh;
+    width: 20%;
+    padding: 1.5vh;
+    font-size: calc(12px + 0.5vw);
+}
+
+.clear-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Output */
+#output {
+    margin-top: 2vh;
+    font-size: calc(14px + 1vw);
+    font-weight: bold;
+    color: darkslategray;
+}
+
 
 /*Two column container ends*/
 
@@ -208,10 +265,6 @@ footer a{
         font-size: calc(1px + 2vw);
     }
 
-    #profile-image{
-        max-width: 100%;
-    }
-
     #main{
         width: 100%;
         display: flex;
@@ -222,7 +275,7 @@ footer a{
     #main-text{
         align-self: center;
         width: 90%;
-        margin: 0 auto;
+        margin: 1vh 1vw;
     }
 
     #main-image{

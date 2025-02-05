@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="description" content="Sudtida's Online Resume">
-    <link type="text/css" rel="stylesheet" href="style_home.css">
+    <link type="text/css" rel="stylesheet" href="style_projects.css">
     <title>projects | Resume</title>
 </head>
 <body>
@@ -31,7 +31,16 @@
 
             <h3 id="main-title">projects</h3>
 
-            <div id="main>">
+            <div id="main">
+                <section id="github-projects">
+                    <hr style="margin: 4vh 0vw;">
+                    <h2>My GitHub Projects</h2>
+                    <ul>
+                        <li><a href="https://github.com/jlibi/CS-665-Class-Project">Project 1</a></li>
+                        <li><a href="https://github.com/jlibi/arcade-game">Project 2</a></li>
+
+                    </ul>
+                </section>
 
                 <div id="calculator">
                     <hr style="margin: 4vh 10vw;">
@@ -46,11 +55,12 @@
                         <button onclick="subtraction()">-</button>
                         <button onclick="multiplication()">*</button>
                         <button onclick="division()">/</button>
-                        <button onclick="power()">Power</button>
-                        <button onclick="clearFields()">Clear</button>
+                        <button onclick="power()">^</button>
                     </div>
 
-                    <h3 id="output">Result: </h3>
+                    <button class="clear-btn" onclick="clearFields()">Clear</button>
+
+                    <h3 id="output"></h3>
 
                 </div>
             </div>
@@ -63,6 +73,8 @@
     </footer>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
