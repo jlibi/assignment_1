@@ -33,8 +33,24 @@
 
             <div id="main>">
 
-                <div id="main-text">
+                <div id="calculator">
                     <hr style="margin: 4vh 10vw;">
+                    <h4 id="text">Calculator</h4>
+                    <div class="inputs">
+                        <input type="number" id="first-number">
+                        <input type="number" id="second-number">
+                    </div>
+
+                    <div class="buttons">
+                        <button onclick="addition()">+</button>
+                        <button onclick="subtraction()">-</button>
+                        <button onclick="multiplication()">*</button>
+                        <button onclick="division()">/</button>
+                        <button onclick="power()">Power</button>
+                        <button onclick="clearFields()">Clear</button>
+                    </div>
+
+                    <h3 id="output">Result: </h3>
 
                 </div>
             </div>
@@ -43,10 +59,11 @@
     </div>
 
     <footer>
-        <p>All Rights Reserved by Sudtida Thumsithi <a href="../credits/credits.html"> Credits</a> &copy;</p>
+        <p>All Rights Reserved by Sudtida Thumsithi &copy;</p>
     </footer>
 
 </div>
 
 </body>
 </html>
+
